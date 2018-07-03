@@ -10,7 +10,7 @@ The bottom line to pass the competetion is to reach the average speed higher tha
 
 The content below is my intuitions and methods to acheve 72.56 mph.
 
-lanesSide / patchesAhead / patchesBehind: 
+**lanesSide / patchesAhead / patchesBehind** 
 
 In my opinion, I would like to choose the lanesSide value as 4. The road has 7 lanes in total. when the lanesSide=4, it means that even if the car is on the most left/right lane, we still have a relative large vison. In other words, there are always more than 5 lanes (out of 7) in the vision of the agent, which makes the car faster and easier to find the "exit" to some local congestion situation. Actually I started my model with a relative smaller lanesSide value, the agent appeared to behave poorly because of the lack of the perception on the lanes far away from the current lane. Instead of changing the lane swiftly, the agent chose to decelerate and wait for the opportunity.
 
